@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Kalurahan Jepitu</title>
+    <link rel="stylesheet" href="stylemain.css">
+    <!-- Menyertakan Font Awesome untuk Ikon Sosial -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Style untuk layout sejarah dan berita terkini */
+        .layout {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        /* Style untuk berita terkini yang lebih kecil */
+        .berita-terkini {
+            font-size: 0.9rem; /* Ukuran font lebih kecil */
+            width: 30%; /* Lebar berita terkini */
+        }
+
+        .berita-item {
+            margin-bottom: 8px; /* Jarak antar berita */
+        }
+
+        /* Style untuk bagian sejarah */
+        .sejarah {
+            width: 65%; /* Lebar bagian sejarah */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="img/logo-gunungkidul-removebg-preview.png" alt="Logo Kalurahan" class="logo">
+            <h1>Kalurahan Jepitu</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="mainpage.html">Beranda</a></li>
+                <li class="dropdown">
+                    <a href="#profil" class="dropbtn">Profil</a>
+                    <div class="dropdown-content">
+                        <a href="profil_perangkat.html">Profil Perangkat Kalurahan</a>
+                        <a href="struktur_organisasi.html">Struktur Organisasi</a>
+                        <a href="visi_misi.html">Visi dan Misi</a>
+                        <a href="peta_kalurahan.html">Peta Kalurahan</a>
+                        <a href="sejarah_kalurahan.html">Sejarah</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#kelembagaan" class="dropbtn">Kelembagaan</a>
+                    <div class="dropdown-content">
+                        <a href="#karang-taruna">Karang Taruna</a>
+                    </div>
+                </li>
+                <li><a href="dataPenduduk.html">Data Penduduk</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Bagian Konten Utama -->
+    <main class="main-content">
+
+        <!-- Layout Sejarah dan Berita Terkini -->
+        <div class="layout">
+            <!-- Sejarah Kalurahan -->
+            <div class="sejarah">
+                <h2>Sejarah Kalurahan Jepitu</h2>
+                <p>Kalurahan Jepitu memiliki sejarah panjang yang kaya. Menurut catatan, desa ini telah ada sejak abad ke-16 dan
+                    menjadi tempat tinggal para petani yang mengelola lahan pertanian di sekitarnya. Masyarakat di Jepitu
+                    dikenal dengan tradisi gotong royong yang kuat, yang telah terjalin selama ratusan tahun.</p>
+                <p>Dalam perjalanannya, Kalurahan Jepitu mengalami berbagai perubahan, terutama dalam pengelolaan sumber daya
+                    alam dan budaya. Seiring dengan perkembangan zaman, desa ini juga mulai beradaptasi dengan teknologi
+                    modern tanpa meninggalkan nilai-nilai tradisional yang ada.</p>
+            </div>
+
+            <!-- Berita Terkini Kalurahan -->
+            <div class="berita-terkini">
+                <h2>Berita Terkini</h2>
+                <p>Klik berlangganan untuk mendapatkan berita terbaru dari situs ini.</p>
+                <div class="berita-item">
+                    <span class="tanggal">11 Juli 2022</span>
+                    <h3>Melaksanakan Pengukuran Hasil Pekerjaan Diwajibkan Sesuai Aturan Perbup</h3>
+                    <p>Jepitu 09-07-2022 - Melaksanakan pengukuran dan checking hasil pekerjaan merupakan bentuk
+                        evaluasi...</p>
+                </div>
+                <div class="berita-item">
+                    <span class="tanggal">29 Juni 2022</span>
+                    <h3>3 Agenda Dalam 1 Hari Sekaligus</h3>
+                    <p>Pemerintah Kalurahan Jepitu-28 Juni 2022, Dalam agenda rapat dan musyawarah yang dilaksanakan
+                        di Kalurahan...</p>
+                </div>
+                <div class="berita-item">
+                    <span class="tanggal">16 Juni 2022</span>
+                    <h3>Penyaluran BLT DD Sampai Salur 2 Bulan</h3>
+                    <p>Penyaluran BLT DD untuk bulan April, Mei, dan Juni telah dilaksanakan dengan melibatkan
+                        perangkat Kalurahan...</p>
+                </div>
+                <div class="berita-item">
+                    <span class="tanggal">24 Desember 2021</span>
+                    <h3>SI SAMBAR-Vaksinasi Sambang Warga Oleh Forkopimkab Pemalang</h3>
+                    <p>Forkopimkab Pemalang melaksanakan vaksinasi yang bertujuan untuk mempercepat program
+                        vaksinasi daerah...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kalurahan Jepitu. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="scriptjs.js"></script>
+
+</body>
+
+</html>

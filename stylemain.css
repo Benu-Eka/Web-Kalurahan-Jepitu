@@ -1,0 +1,581 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    position: relative;
+    /* Agar dropdown berada di dalam posisi relative dari item */
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Dropdown Menu */
+.dropdown .dropbtn {
+    cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    /* Sembunyikan dropdown secara default */
+    position: absolute;
+    top: 100%;
+    /* Tempatkan di bawah item navbar */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.795);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Menampilkan dropdown saat di-hover */
+.navbar ul li:hover .dropdown-content {
+    display: block;
+    /* Tampilkan dropdown saat hover */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 60px;
+    height: 50px;
+}
+
+.logo-container h1 {
+    font-size: 1.5rem;
+    color: white;
+    /* padding-top: 20px; */
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+
+.caption h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.caption p {
+    font-size: 1.5rem;
+}
+
+/* Main Content */
+.main-content {
+    background-color: #222;
+    color: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    line-height: 1.6;
+}
+
+/* Sekilas Tentang Kalurahan */
+.sekilas-tentang {
+    margin-bottom: 2rem;
+}
+
+.sekilas-tentang h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #f8b400;
+}
+
+/* Container untuk konten dan foto */
+.sekilas-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Foto balai kalurahan */
+.balai-photo {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Berita Terkini Container */
+.berita-terkini {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    /* Menambahkan jarak bawah untuk memberi spasi */
+}
+
+.berita-terkini h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.berita-terkini p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #777;
+}
+
+/* Berita Container */
+.berita-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-bottom: 50px;
+}
+
+/* Berita Item */
+.berita-item {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.berita-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Berita Image */
+.berita-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Berita Content */
+.berita-content {
+    padding: 1rem;
+    text-align: left;
+}
+
+.berita-content .tanggal {
+    font-size: 0.9rem;
+    color: #f57c00;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.berita-content h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.3;
+}
+
+.berita-content p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Kontainer untuk Form Kontak */
+.contact-us {
+    background-color: #f4f4f4;
+    /* Warna latar belakang */
+    padding: 40px;
+    /* Ruang dalam */
+    display: flex;
+    /* Menggunakan flexbox */
+    justify-content: space-between;
+    /* Mengatur jarak antara elemen */
+    max-width: 100%;
+    /* Lebar maksimum */
+    margin: auto;
+    /* Menempatkan di tengah */
+    border-radius: 5px;
+    /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Bayangan */
+}
+
+/* Form Kontak */
+.contact-form-container {
+    flex: 1;
+    /* Membuat form mengambil 1 bagian dari flex container */
+    margin-right: 20px;
+    /* Jarak antara form dan informasi kontak */
+}
+
+/* Menempatkan Form Input di Sebelah Kiri */
+.contact-form {
+    display: flex;
+    /* Menggunakan flexbox untuk form */
+    flex-direction: column;
+    /* Mengatur arah kolom */
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    /* Ukuran font judul */
+    color: #2c3e50;
+    /* Warna teks */
+    margin-bottom: 20px;
+    /* Jarak bawah */
+}
+
+.contact-form label {
+    display: block;
+    /* Menampilkan label sebagai blok */
+    margin: 10px 0 5px;
+    /* Jarak atas dan bawah */
+    color: #333;
+    /* Warna teks */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    /* Lebar penuh */
+    padding: 10px;
+    /* Ruang dalam */
+    margin-bottom: 15px;
+    /* Jarak bawah */
+    border: 1px solid #ddd;
+    /* Garis batas */
+    border-radius: 5px;
+    /* Sudut membulat */
+}
+
+.contact-form button {
+    width: 100%;
+    /* Lebar penuh */
+    padding: 10px;
+    /* Ruang dalam */
+    background-color: #ff4d4d;
+    /* Warna latar belakang */
+    color: white;
+    /* Warna teks */
+    border: none;
+    /* Tanpa garis batas */
+    border-radius: 5px;
+    /* Sudut membulat */
+    cursor: pointer;
+    /* Menunjukkan pointer saat hover */
+}
+
+.contact-form button:hover {
+    background-color: #e60000;
+    /* Warna saat hover */
+}
+
+/* Informasi Kontak */
+.contact-info {
+    flex: 1;
+    /* Membuat informasi kontak mengambil 1 bagian dari flex container */
+    background-color: #fff;
+    /* Warna latar belakang */
+    padding: 20px;
+    /* Ruang dalam */
+    border-radius: 8px;
+    /* Sudut membulat */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Bayangan */
+}
+
+.contact-info h3 {
+    margin-top: 0;
+    /* Menghapus margin atas */
+    color: #2c3e50;
+    /* Warna teks */
+}
+
+.contact-info p {
+    margin: 10px 0;
+    /* Jarak atas dan bawah */
+    color: #666;
+    /* Warna teks */
+}
+
+.contact-info i {
+    margin-right: 10px;
+    /* Jarak antara ikon dan teks */
+}
+
+.social-icons {
+    margin-top: 15px;
+    /* Jarak atas */
+}
+
+.social-icons a {
+    display: inline-block;
+    /* Menampilkan ikon sebagai blok */
+    margin-right: 10px;
+    /* Jarak kanan */
+    color: #ff4d4d;
+    /* Warna ikon */
+    font-size: 20px;
+    /* Ukuran font */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.logo {
+    width: 60px;
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Profil Perangkat Kalurahan */
+.profil-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profil-perangkat .h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profil-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.profil-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* Membuat foto menjadi bulat */
+    object-fit: cover;
+    border: 2px solid #f57c00;
+    /* Border warna oranye */
+}
+
+.profil-info {
+    flex: 1;
+    /* Membuat bagian informasi mengambil ruang yang tersisa */
+}
+
+.profil-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profil-table th,
+.profil-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.profil-table th {
+    background-color: #f57c00;
+    /* Warna oranye untuk header */
+    color: white;
+    /* Warna teks putih */
+}
+
+.profil-table td {
+    color: #555;
+    /* Warna teks untuk isi */
+}
+
+
+/* Style untuk layout profil dan berita terkini */
+.layout {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.profil-perangkat {
+    flex: 1;
+    margin-right: 15px;
+    /* Jarak antara profil dan berita terkini */
+}
+
+.berita-terkini {
+    width: 450px;
+}
+
+/* Style tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Style untuk berita terkini */
+.berita-item {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.berita-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Style untuk profil */
+.profil {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.profil img {
+    display: block;
+    margin: 0 auto 10px;
+    /* Pusatkan gambar */
+    width: 150px;
+    /* Ukuran gambar */
+    height: auto;
+    border-radius: 10px;
+}

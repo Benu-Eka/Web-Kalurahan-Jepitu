@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Penduduk Kalurahan Jepitu</title>
+    <link rel="stylesheet" href="stylemain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .data-table th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .data-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="img/logo-gunungkidul-removebg-preview.png" alt="Logo Kalurahan" class="logo">
+            <h1>Kalurahan Jepitu</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="mainpage.html">Beranda</a></li>
+                <li class="dropdown">
+                    <a href="#profil" class="dropbtn">Profil</a>
+                    <div class="dropdown-content">
+                        <a href="profil_perangkat.html">Profil Perangkat Kalurahan</a>
+                        <a href="struktur_organisasi.html">Struktur Organisasi</a>
+                        <a href="visi_misi.html">Visi dan Misi</a>
+                        <a href="peta_kalurahan.html">Peta Kalurahan</a>
+                        <a href="sejarah_kalurahan.html">Sejarah</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#kelembagaan" class="dropbtn">Kelembagaan</a>
+                    <div class="dropdown-content">
+                        <a href="#karang-taruna">Karang Taruna</a>
+                    </div>
+                </li>
+                <li><a href="dataPenduduk.html">Data Penduduk</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Judul Halaman -->
+        <h2>Data Penduduk Kalurahan Jepitu</h2>
+        
+        <!-- Deskripsi Singkat -->
+        <p>Berikut adalah data penduduk Kalurahan Jepitu, yang terdiri dari jumlah penduduk berdasarkan kategori usia, jenis kelamin, dan pekerjaan.</p>
+        
+        <!-- Tabel Data Penduduk -->
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Kepala Keluarga</th>
+                    <th>Jumlah Anggota Keluarga</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Usia</th>
+                    <th>Pekerjaan</th>
+                    <th>Pendidikan Terakhir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bapak Suyono</td>
+                    <td>4</td>
+                    <td>Laki-Laki</td>
+                    <td>45</td>
+                    <td>Petani</td>
+                    <td>SMA</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ibu Sriwati</td>
+                    <td>3</td>
+                    <td>Perempuan</td>
+                    <td>39</td>
+                    <td>Pedagang</td>
+                    <td>SMP</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bapak Agus</td>
+                    <td>5</td>
+                    <td>Laki-Laki</td>
+                    <td>50</td>
+                    <td>Guru</td>
+                    <td>S1</td>
+                </tr>
+                <!-- Tambahkan data penduduk lainnya di sini -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kalurahan Jepitu. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+
+</html>
